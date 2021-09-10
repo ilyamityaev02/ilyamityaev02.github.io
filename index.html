@@ -6,15 +6,41 @@
 
 <body>
 
-
-<ul>
-    <li><a href="http://kubsu.ru/" title="Официальный сайт КубГУ" target="_blank">КубГу</a></li>
-</ul>
-
-<ol>
-    <li><a href="example.com" title="Example" target="_blank">Example</a></li>
+<ol id="list">
+    <li><a href="http://example.com" title="Example" target="_blank">Example</a></li>
     <li><a href="https://example.com" title="Example" target="_blank">Example https</a></li>
+    <li><a href="ftp://example.com/text.txt" title="Example" target="_blank">Example ftp</a></li>
+    <li><a href="ftp://ilya:123456@example.com/text.txt" title="Example" target="_blank">Example ftp with login</a></li>
+    <li><a href="https://example.com/contacts#tel" title="Example" target="_blank">Contacts telephone</a></li>
+    <li><a href="#list" title="Example" target="_blank">This list</a></li>
+    <li><a href="https://example.com/main?key=krt8ret8k&id=3546" title="Example" target="_blank">url param</a></li>
+    <li>
+        <ul>
+            <li><a href="#" title="Main">Main</a></li>
+            <li><a href="#" title="Contacts">Contacts</a></li>
+        </ul>
+    </li>
+    <li><a>To the moon</a></li>
+    <li><a href="#" title="Example" target="_blank">nothing</a></li>
+    <li><a href="#" title="Example" target="_blank" rel="nofollow">nofollow</a></li>
+    <li><noindex><a href="#" title="Example" target="_blank" rel="noindex">no index</a></noindex></li>
+    <li><p>Go <a href="example.com" title="Example" target="_blank">here</a></p></li>
+    <li><a href="https://example.com" title="Example" target="_blank"><img src="photo.jpg"></a></li>
+    <li><a href="#" title="Example" target="_blank" rel="nofollow">MAP</a></li>
+    <li><a href="main" title="Example" target="_blank" rel="nofollow">catalog</a></li>
+    <li><a href="./about/main" title="Example" target="_blank" rel="nofollow">catalog</a></li>
+    <li><a href="../contacts/text" title="Example" target="_blank" rel="nofollow">up</a></li>
+    <li><a href="../../contacts/text" title="Example" target="_blank" rel="nofollow">up</a></li>
+    <li><a href="index.html" title="Example" target="_blank" rel="nofollow">main</a></li>
+    <li><a href="main.html" title="Example" target="_blank" rel="nofollow">main</a></li>
 </ol>
+
+<form>
+    <input type="text" placeholder="Имя">
+    <input type="email" placeholder="email">
+    <input type="date" placeholder="date">
+
+</form>
 
 </body>
 
