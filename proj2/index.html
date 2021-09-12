@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Obj 1</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="head">
+          <img src="photo.jpg" alt="Ed Sheeran Site" />
+          <p class="title">Site of Ed Sheeran</p>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <div class="container">
+        <div class="nav-menu">
+          <ul class="navigation">
+            <li><a href="#">Туда</a></li>
+            <li><a href="#">Сюда</a></li>
+            <li><a href="#">Обратно</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="content">
+      <div class="container">
+        <ol id="list">
+          <li>
+            <a href="//www.example.com" title="Example" target="_blank"
+              >Example</a
+            >
+          </li>
+          <li>
+            <a href="https://example.com" title="Example" target="_blank"
+              >Example https</a
+            >
+          </li>
+          <li>
+            <a href="ftp://example.com/text" title="Example" target="_blank"
+              >Example ftp</a
+            >
+          </li>
+          <li>
+            <a
+              href="ftp://ilya:123456@example.com/text"
+              title="Example"
+              target="_blank"
+              >Example ftp with login</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://example.com/contacts#tel"
+              title="Example"
+              target="_blank"
+              >Contacts telephone</a
+            >
+          </li>
+          <li><a href="#list" title="Example" target="_blank">This list</a></li>
+          <li>
+            <a
+              href="https://example.com/main?key=krt8ret8k&id=3546"
+              title="Example"
+              target="_blank"
+              >url param</a
+            >
+          </li>
+          <li>
+            <ul>
+              <li><a href="https://example.com" title="Main">Main</a></li>
+              <li>
+                <a href="https://example.com" title="Contacts">Contacts</a>
+              </li>
+            </ul>
+          </li>
+          <li><a>To the moon</a></li>
+          <li>
+            <a href="" title="Example" target="_blank">nothing</a>
+          </li>
+          <li>
+            <a
+              href="https://example.com"
+              title="Example"
+              target="_blank"
+              rel="nofollow"
+              >nofollow</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://example.com"
+              title="Example"
+              target="_blank"
+              rel="noindex"
+              >no index</a
+            >
+          </li>
+          <li>
+            <p>
+              Go <a href="example.com" title="Example" target="_blank">here</a>
+            </p>
+          </li>
+          <li>
+            <a href="https://example.com" title="Example" target="_blank"
+              ><img src="photo.jpg" alt="Ed Sheeran"
+            /></a>
+          </li>
+          <li>
+            MAP
+            <img src="photo.jpg" usemap="#image-map" alt="Ed Sheeran" />
+
+            <map name="image-map">
+              <area
+                target="_blank"
+                alt="Example"
+                title="Example"
+                href="https://example.com"
+                coords="0,162,3,3,214,91"
+                shape="poly"
+              />
+              <area
+                target="_blank"
+                alt="Example"
+                title="Example"
+                href="https://example.com"
+                coords="129,239,87"
+                shape="circle"
+              />
+            </map>
+          </li>
+          <li>
+            <a href="./main.html" title="Example" target="_blank">catalog</a>
+          </li>
+          <li>
+            <a href="./about/main.html" title="Example" target="_blank"
+              >catalog main</a
+            >
+          </li>
+          <li>
+            <a href="../contacts" title="Example" target="_blank">up</a>
+          </li>
+          <li>
+            <a href="../../contacts" title="Example" target="_blank">up x2</a>
+          </li>
+          <li>
+            <a href="/" title="Example" target="_blank">main</a>
+          </li>
+          <li>
+            <a href="/main.html" title="Example" target="_blank">in</a>
+          </li>
+        </ol>
+        <hr />
+        <table class="main-table">
+          <tr>
+            <th>Num1</th>
+            <th>Num2</th>
+            <th>Num3</th>
+          </tr>
+          <tr>
+            <td colspan="3">right ( all together)</td>
+          </tr>
+          <tr>
+            <td>left</td>
+            <td>right</td>
+            <td>middle</td>
+          </tr>
+          <tr>
+            <td>right</td>
+            <td>left</td>
+            <td>middle</td>
+          </tr>
+          <tr>
+            <td>left</td>
+            <td>middle</td>
+            <td>right</td>
+          </tr>
+        </table>
+        <hr />
+        <form id="contract-form" method="POST" action="/">
+          <label> <input type="text" placeholder="Имя" /><br /></label>
+          <label><input type="email" placeholder="email" /><br /></label>
+          <label><input type="date" /><br /></label>
+          <label>
+            Пол
+            <input type="radio" name="gender" value="male" />Мужской
+          </label>
+          <label>
+            <input type="radio" name="gender" value="female" />Женский
+          </label>
+          <br />
+          <label>
+            Кол-во конечностей
+            <input type="radio" name="arms" value="1" />1
+          </label>
+          <label> <input type="radio" name="arms" value="2" />2 </label>
+          <label>
+            <input type="radio" name="arms" value="more" />3 и более
+          </label>
+          <br />
+          <label>
+            Сверхспособность<br />
+            <select name="arg[]" multiple="multiple">
+              <option value="god">бессмертие</option>
+              <option value="wall">прохождение сквозь стены</option>
+              <option value="fly">левитация</option>
+            </select> </label
+          ><br />
+          <label> Биография <textarea name="about"></textarea></label><br />
+          <label><input type="checkbox" />С контрактом ознакомлен</label><br />
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer"><p>(c) Митяев Илья 2021</p></div>
+      </div>
+    </footer>
+  </body>
+</html>
