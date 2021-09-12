@@ -79,33 +79,31 @@
       </li>
       <li>
         <a href="https://example.com" title="Example" target="_blank"
-          ><img src="photo.jpg"
+          ><img src="photo.jpg" alt="Ed Sheeran"
         /></a>
       </li>
       <li>
-        <a href="#" title="Example" target="_blank"
-          >MAP
-          <img src="photo.jpg" usemap="#image-map" />
+        MAP
+        <img src="photo.jpg" usemap="#image-map" alt="Ed Sheeran" />
 
-          <map name="image-map">
-            <area
-              target="_blank"
-              alt="Example"
-              title="Example"
-              href="https://example.com"
-              coords="0,162,3,3,214,91"
-              shape="poly"
-            />
-            <area
-              target="_blank"
-              alt="Example"
-              title="Example"
-              href="https://example.com"
-              coords="129,239,87"
-              shape="circle"
-            />
-          </map>
-        </a>
+        <map name="image-map">
+          <area
+            target="_blank"
+            alt="Example"
+            title="Example"
+            href="https://example.com"
+            coords="0,162,3,3,214,91"
+            shape="poly"
+          />
+          <area
+            target="_blank"
+            alt="Example"
+            title="Example"
+            href="https://example.com"
+            coords="129,239,87"
+            shape="circle"
+          />
+        </map>
       </li>
       <li>
         <a href="./main.html" title="Example" target="_blank">catalog</a>
@@ -134,7 +132,7 @@
     <form id="contract-form" method="POST" action="/">
       <label> <input type="text" placeholder="Имя" /><br /></label>
       <label><input type="email" placeholder="email" /><br /></label>
-      <label><input type="date" placeholder="date" /><br /></label>
+      <label><input type="date" /><br /></label>
       <label>
         Пол
         <input type="radio" name="gender" value="male" />Мужской
@@ -160,7 +158,7 @@
       ><br />
       <label> Биография <textarea name="about"></textarea></label><br />
       <label><input type="checkbox" />С контрактом ознакомлен</label><br />
-      <button type="submit" />Отправить
+      <button type="submit">Отправить</button>>
     </form>
   </body>
 </html>
