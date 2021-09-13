@@ -8,6 +8,10 @@ function countPrice(e) {
   const price = document.getElementById("price");
   const count = document.getElementById("num");
   const total = document.getElementById("total");
-  const result = price.value * count.value;
-  total.value = result;
+  let result = price.value * count.value;
+  if (!isNaN(Number(price.value)) && !isNaN(Number(count.value))) {
+    total.value = result;
+  } else {
+    alert("Допущена ошибка при вводе данных!");
+  }
 }
