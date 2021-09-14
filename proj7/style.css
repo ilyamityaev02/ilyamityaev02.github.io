@@ -6,11 +6,12 @@ body {
   background-color: #ccc;
 }
 .carousel div img {
-  width: 150px;
-  height: 150px;
+  width: 100px;
 }
 .carousel {
-  max-width: 960px;
+  max-width: 925px;
+  width: 100%;
+  margin-top: 50px;
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -18,11 +19,22 @@ body {
   padding-right: 50px;
   position: relative;
 }
-.slick-prev {
-  left: 0;
-  transform: rotate(180deg);
-}
-
 .slick-next {
-  right: 0;
+  right: 25px !important;
+}
+.slick-prev {
+  left: 15px !important;
+}
+.slick-dots {
+  /* left: -30px; */
+  position: relative !important;
+}
+@media (min-width: 768px) {
+  .carousel div img {
+    width: 150px;
+    height: 175px;
+  }
+  .slick-prev {
+    left: -25px !important;
+  }
 }
