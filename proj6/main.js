@@ -6,6 +6,10 @@ window.addEventListener("DOMContentLoaded", function () {
   radios.style.display = "none";
   check.style.display = "none";
   num.addEventListener("input", function () {
+    if (Number.isNaN(Number(num.value))) {
+      alert("Неверно введенные данные");
+      return;
+    }
     let t = type.value;
     switch (t) {
       case "1":
