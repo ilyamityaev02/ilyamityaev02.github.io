@@ -9,19 +9,31 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form
-      action="https://formcarry.com/s/nIYopB_IMqD"
-      method="POST"
-      accept-charset="UTF-8"
-      id="send-form"
-    >
-      <input type="text" placeholder="Имя" name="name" id="name" /><br />
-      <input type="email" placeholder="E-mail" name="email" id="email" /><br />
-      <textarea name="msg" placeholder="Сообщение" id="msg"></textarea><br />
-      <input type="checkbox" name="policy" id="check" /> Согласен с политикой
-      обработки персональных данных <br />
-      <button type="submit" id="">Отправить</button>
-    </form>
+    <button id="popup-btn">Показать форму</button>
+    <div class="popup-container" id="popup">
+      <div class="popup-content">
+        <button id="close-popup">Закрыть</button>
+        <form
+          action="https://formcarry.com/s/nIYopB_IMqD"
+          method="POST"
+          accept-charset="UTF-8"
+          id="send-form"
+        >
+          <input type="text" placeholder="Имя" name="name" id="name" /><br />
+          <input
+            type="email"
+            placeholder="E-mail"
+            name="email"
+            id="email"
+          /><br />
+          <textarea name="msg" placeholder="Сообщение" id="msg"></textarea
+          ><br />
+          <input type="checkbox" name="policy" id="check" /> Согласен с
+          политикой обработки персональных данных <br />
+          <button type="submit" id="">Отправить</button>
+        </form>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
