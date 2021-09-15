@@ -1,8 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
   HidePopUp();
+  window.history.pushState({ popup: "close" }, "popup", "/");
   window.addEventListener("popstate", function (e) {
     if (e.state["popup"] == "close") {
       HidePopUp();
+    }
+    if (e.state["popup"] == "open") {
+      ShowPopUp();
     }
   });
   const closeBtn = document.getElementById("close-popup");
@@ -46,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
   });
 });
+
 function toLocalStorage() {
   const name = document.getElementById("name");
   const email = document.getElementById("email");
@@ -60,7 +65,7 @@ function HidePopUp() {
   popup.style.display = "none";
 }
 function ShowPopUp() {
-  window.history.pushState({ popup: "open" }, "popup", "/popup");
+  window.history.replaceState({ popup: "open" }, "popup", "/popup");
   const popup = document.getElementById("popup");
   popup.style.display = "block";
 }
