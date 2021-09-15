@@ -65,7 +65,7 @@ function HidePopUp() {
   popup.style.display = "none";
 }
 function ShowPopUp() {
-  window.history.replaceState({ popup: "open" }, "popup", "/popup");
+  window.history.replaceState({ popup: "open" }, "popup", "/form.html");
   const popup = document.getElementById("popup");
   popup.style.display = "block";
 }
