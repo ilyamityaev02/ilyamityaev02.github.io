@@ -1,4 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
+  HidePopUp();
+  window.addEventListener("popstate", function (e) {
+    if (e.state["popup"] == "close") {
+      HidePopUp();
+    }
+  });
+  const closeBtn = document.getElementById("close-popup");
+  closeBtn.addEventListener("click", HidePopUp);
+  const popbtn = document.getElementById("popup-btn");
+  popbtn.addEventListener("click", ShowPopUp);
   const name = document.getElementById("name");
   const email = document.getElementById("email");
   const msg = document.getElementById("msg");
@@ -43,4 +53,14 @@ function toLocalStorage() {
   localStorage.setItem("name", name.value);
   localStorage.setItem("email", email.value);
   localStorage.setItem("msg", msg.value);
+}
+function HidePopUp() {
+  window.history.replaceState({ popup: "close" }, "popup", "/");
+  const popup = document.getElementById("popup");
+  popup.style.display = "none";
+}
+function ShowPopUp() {
+  window.history.pushState({ popup: "open" }, "popup", "/popup");
+  const popup = document.getElementById("popup");
+  popup.style.display = "block";
 }
