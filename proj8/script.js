@@ -60,12 +60,12 @@ function toLocalStorage() {
   localStorage.setItem("msg", msg.value);
 }
 function HidePopUp() {
-  window.history.replaceState({ popup: "close" }, "popup", "/index.html");
+  window.history.replaceState({ popup: "close" }, "popup", "./index.html");
   const popup = document.getElementById("popup");
   popup.style.display = "none";
 }
 function ShowPopUp() {
-  window.history.replaceState({ popup: "open" }, "popup", "/form.html");
+  window.history.replaceState({ popup: "open" }, "popup", "./form.html");
   const popup = document.getElementById("popup");
   popup.style.display = "block";
 }
