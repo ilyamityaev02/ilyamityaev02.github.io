@@ -60,7 +60,7 @@ function toLocalStorage() {
   localStorage.setItem("msg", msg.value);
 }
 function HidePopUp() {
-  window.history.replaceState({ popup: "close" }, "popup", "/");
+  window.history.replaceState({ popup: "close" }, "popup", "/index.html");
   const popup = document.getElementById("popup");
   popup.style.display = "none";
 }
