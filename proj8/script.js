@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const msg = document.getElementById("msg");
   const check = document.getElementById("check");
   const form = document.getElementById("send-form");
-  const URL = "https://formcarry.com/s/nIYopB_IMqD";
+  const URL = "https://formcarry.com/s/HhDnMI-5UW_";
   name.value = localStorage.getItem("name");
   email.value = localStorage.getItem("email");
   msg.value = localStorage.getItem("msg");
